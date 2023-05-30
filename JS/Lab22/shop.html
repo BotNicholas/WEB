@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shop</title>
+        <link rel="icon" type="images/gif" href="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif">
+        <link rel="stylesheet" type="text/css" href="./css/shopstyle.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="title">
+                <h1 style="margin-left: 10px;">Shoes Shop</h1>
+                <hr width="99%">
+            </div>
+            <div id="content">
+                <div id="items">
+                    <form class="item" name="Item">
+                        <h2>Nike Bruin Mid</h2>
+                        <img src="./images/NIKE_BRUIN_MID_537333-018.png" alt="Nike Bruin Mid photo">
+                        <span class="price">29.99</span>
+                        <div class="count" name="Count">
+                            <span style="font-weight: bold;">How many?</span>
+                            <input type="number" class="amount" name="amount" value="0" min="0">
+                        </div>
+                        <div>
+                            <button type="button" class="btn" name="add">Add to Basket</button>
+                            <span class="favoriteadd favorite">★</span>
+                        </div>
+                    </form>
+                    <form class="item" name="Item">
+                        <h2>Converse All Star Mono Ox</h2>
+                        <img src="./images/bc94561544a8b9c28063bddaee8c.png" alt="Converse All Star Mono photo">
+                        <span class="price">45.00</span>
+                        <div class="count" name="Count">
+                            <span style="font-weight: bold;">How many?</span>
+                            <input type="number" class="amount" name="amount" value="0" min="0">
+                        </div>
+                        <div>
+                            <button type="button" class="btn" name="add">Add to Basket</button>
+                            <span class="favoriteadd favorite">★</span>
+                        </div>
+                    </form>
+                    <form class="item" name="Item">
+                        <h2>Converse Simpsons Bart Hi Trainers</h2>
+                        <img src="./images/141390C.png.png" alt="Converse Simpsons Bart Hi photo">
+                        <span class="price">24.99</span>
+                        <div class="count" name="Count">
+                            <span style="font-weight: bold;">How many?</span>
+                            <input type="number" class="amount" name="amount" value="0" min="0">
+                        </div>
+                        <div>
+                            <button type="button" class="btn" name="add">Add to Basket</button>
+                            <span class="favoriteadd unfavorite">☆</span>
+                        </div>
+                    </form>
+                </div>
+
+                
+                <form id="cart" name="cart">
+                    <h2>Shoping Cart</h2>
+                    <div id="total_items">Total items: <span class=".number">0</span></div>
+                    <div id="total_units">Total units: <span class=".number">0</span></div>
+                    <div id="total_price">Total: <span class=".number">0</span></div>
+                </form>
+            </div>
+        </div>
+
+        <script src="./js/shop.js"></script>
+    </body>
+</html>

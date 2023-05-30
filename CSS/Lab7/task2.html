@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task II</title>
+        <link rel="icon" type="images/gif" href="https://customsitesmedia.usc.edu/wp-content/uploads/sites/59/2020/10/16002406/TFM_WIN20_TylerMenzel_feat2.gif">
+        <style>
+            body{
+                background-color:floralwhite;
+                font-size: 17pt;
+                width: 530px;
+                line-height: 40px;
+                margin: auto;
+            }
+
+            h1, h2, h3, h4, h5, h6{
+                color: blue;
+                text-align: center;
+            }
+
+            .redBold{
+                color:red;
+                font-weight: bold;
+            }
+
+            .blueItalic{
+                color: blue;
+                font-style: italic;
+            }
+            p{
+                text-indent: 50px;
+            }
+
+            /* 1-i sposob viravnivania kartinki (bez div-a) */
+            /* img{
+                 img i span - strocinie elementi , new blocinie (blocinii - v vide priamougolinika i zanimaiut vsiu sherimu ecrena (eto div i drugie)) - eti element stroki i ne zanimaet vsiu sherinu ecrana. 
+                Dlia viravnivaniia img nado ego iz strocinogo sdelati blocinim, to esti sdelati tak, citobi on zanimal vsiu sherinu ecrana. Eto i delaet display: block!
+                display: block;
+                margin: auto;   delaet otstupi avtomaticeski, podgoniaia element v centr
+
+                 podrobnee tut:      https://www.youtube.com/watch?v=nFaBNwKGqC0 
+            } */
+
+            /* II sposob! */
+            #CMSImage{
+                /* tut img uze budet ciastiu soderzimogo bloka div => mozno primeniti:  */
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2>Что такое CMS</h2>
+        <p>
+            <span class="redBold">CMS</span> - «система управления контентом» 
+            (<span class="redBold">движок</span>) – написанная PHP-программистами основа 
+            для сайта, с помощью которой вы сможете 
+            управлять сайтом (добавлять контент, менять пункты 
+            меню и т.п.) не зная HTML и CSS.
+        </p>
+        <p>
+            Однако, для того чтобы сделать сайт с 
+            помощью <span class="redBold">CMS</span> <span class="blueItalic">потребуются услуги</span> и 
+            программиста, и дизайнера, и верстальщика. И 
+            капиталовложения.
+        </p>
+        
+        <h4>Какие бывают cms</h4>
+        <p>
+            Бывают различные системы управления 
+            контентом: для интернет-магазинов, для блогов, для 
+            форумов и т.д.
+        </p>
+
+        <h4>Примеры cms</h4>
+        <p>
+            <span class="blueItalic">Примеры популярных CMS:</span> Joomla, WordPress 
+            (для блогов), PhpBB (для форумов).
+        </p>
+        <p>
+            <span class="redBold">CMS-ки</span> бывают <span class="blueItalic">платные</span> и <span class="blueItalic">бесплатные.</span> 
+        </p>
+
+        <br>
+        <!-- 1-i sposob viravnivania kartinki (bez div-a) -->
+        <!-- <img src="https://cdn-icons-png.flaticon.com/512/1787/1787214.png" alt="Cms" width="30%" height="30%"> -->
+
+        
+        <!-- ILI 2 SPOSOB! -->
+        <div id="CMSImage">
+            <img src="https://cdn-icons-png.flaticon.com/512/1787/1787214.png" alt="Cms" width="30%" height="30%">
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,35 @@
+body{
+    background: radial-gradient(#4d4d4d, #979494);
+    background-attachment: fixed;
+}
+
+#main{
+    display: flex;
+    flex-direction: column; 
+}
+
+a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #424242;
+    font-size: 20pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 7px;
+    display: block;
+    /*Takim obrazom knopka stanovitsa kak blok i mi mizem ei meniati eio razmeri + ko vsemu vsia zona stanovitsa klikabilinoi!!!    */
+    width: 15%;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+}
+
+a:hover{
+    color: black;
+    background-color: white;
+    transition: all 0.5s;
+}

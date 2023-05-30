@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task VIII</title>
+    <link rel="icon" type="images/gif" href="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+    <div id="main">
+        <form>
+            <h1>Задание 8</h1>
+            <p>
+                <img src="./IMG/Рисунок1.png" alt="form sample" style="float: right; width: 25%;">
+                Напишите скрипт, считывающий номер телефона в формате <i>(555) 555-5555</i>. Скрипт должен использовать метод <i>split</i> объекта <i>String</i> 
+                для извлечения кода страны (значение в скобках) и номера телефона. Выведите извлеченные данные в разных текстовых полях, как показано на рисунке.
+            </p>
+
+            <hr style="width: 90%;">
+
+            <div id="result-area3">
+
+                <table id="tel_table">
+                    <tr>
+                        <td>Enter a phone number<br>[in the form (555) 555-5555]</td>
+                        <td><input type="tel" id="tel" required pattern="\(\d\d\d\)\s\d\d\d-\d\d\d\d" placeholder="(555) 555-5555"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn" onclick="splitItNow()">Split!</button></td>
+                    </tr>
+                    <tr>
+                        <td>Area code: </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Number: </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            
+            
+            <script src="./JS/task8.js"></script>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task II</title>
+	<link rel="icon" type="images/gif" href="https://bestanimations.com/media/shapes/13687291393d-shape-computer-art-gif-2.gif">
+</head>
+<body bgcolor="#001133">
+	<h1><font color="white"><b>Ob&#355ine&#355i un Credit la <font color="green">MAIB</font></b></font></h1>
+	<hr color="white" align="left" width="50%"><br>
+	<form>
+		<table border="1" cellspacing="0" color="red" cellpadding="10" width="50%">
+			<tr bgcolor="#e6ffe6">
+
+				<td>
+					Selecta&#355i tipul creditului <br><br>
+					<select name="Credits" id="Credits">
+						<option value="Credit Espresso">Credit Espresso</option>
+						<option value="Credit Refinance">Credit Refinance</option>
+						<option value="Credite auto">Credit Refinance</option>
+					</select>
+				</td>
+
+			</tr>
+			<tr bgcolor="#ccffcc">
+
+				<td width="1000">
+					Summa Creditului
+					
+					<table border="0" cellspacing="0" width="200px">
+						<tr>
+							<td rowspan="2">
+								<input type="number" name="RangeValue" id="RangeValue" oninput="CreditSize.value = RangeValue.value" value="50000">
+							</td>
+							<td rowspan="2"></td>
+							<td>
+								<font size="1">Min. 2000</font>
+							</td>
+							<td align="right">
+								<font size="1">Max. 100000</font><br>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+
+								<!-- Dlia togo, citobi mojno bilo dobaviti metki na range, nsdo sozdati datalist i peredati ego id atributu list u samogo range-a -->
+								<!-- Podroblee tut: http://programmerbook.ru/html/input/type/range/ -->
+
+								<datalist name="CreditSizeValues" id="CreditSizeValues">
+									<option value="2000" label="2000">2000</option>
+									<option value="21600" label="2000">21600</option>
+									<option value="41200" label="2000">41200</option>
+									<option value="60800" label="2000">60800</option>
+									<option value="80400" label="2000">80400</option>
+									<option value="100000" label="2000">100000</option>
+								</datalist>
+
+								<input type="range" name="CreditSize" id="CredittSize" min="2000" max="100000" oninput="RangeValue.value = CreditSize.value" width="100%" value="50000"	list="CreditSizeValues">
+							</td>
+						</tr>
+					</table>			
+				</td>
+
+			</tr>
+			<tr bgcolor="#b3ffb3">
+
+				<td>
+					Perioada (lunii)
+
+					<!-- datalist toliko sozdaiot list, no nam nado ego gde-to primeniti. primeniati mi ego budem v input-e -->
+					<datalist name="CreditMonthsValue" id="CreditMonthsValue">
+						<option value="3">3</option>
+						<option value="6">6</option>
+						<option value="12">12</option>
+						<option value="18">18</option>
+						<option value="30">30</option>
+						<option value="36">36</option>
+						<option value="48">48</option>
+						<option value="60">60</option>
+					</datalist>
+
+					<table border="0" cellspacing="0">
+						<tr>
+							<td rowspan="2">
+
+								<select name="Months" id="Months" oninput="CreditMonths.value = Months.value">
+									<option value="3">3</option>
+									<option value="6">6</option>
+									<option value="12">12</option>
+									<option value="18">18</option>
+									<option value="30">30</option>
+									<option value="36">36</option>
+									<option value="48">48</option>
+									<option value="60">60</option>
+								</select>
+							</td>
+							<td>
+								<font size="1">Min. 3 luni</font>
+							</td>
+							<td align="right">
+								<font size="1">Max. 60 luni</font>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="range" name="CreditMonths" id="CreditMonths" min="3" max="60" list="CreditMonthsValue" oninput="Months.value = CreditMonths.value">
+							</td>
+						</tr>
+					</table>
+				</td>
+
+			</tr>
+			<tr bgcolor="#99ff99">
+				<td>
+					<table border="0" cellspacing="0" width="100%">
+						<tr>
+							<td width="15%">Data acord&#259rii</td>
+							<td width="15%">Data primei pl&#259&#355i</td>
+							<td width="30%">Modalit&#259&#355i de plat&#259</td>
+							<td width="15%">Rata (%)*</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="date" name="AcordingDate" id="AcordingDate">
+							</td>
+							<td>
+								<input type="date" name="FirstPayDate" id="FirstPayDate">
+							</td>
+							<td>
+								<select name="PayingMethod" id="PayingMethod">
+									<option value="Pl&#259ti&#355i lunare egale">Pl&#259ti&#355i lunare egale</option>
+									<option value="Ghi&#351eele &#351i terminalele din oficiile Microinvest">Ghi&#351eele &#351i terminalele din oficiile Microinvest</option>
+									<option value="Prin re&#355eaua de terminale Qiwi &#351i Paynet">Prin re&#355eaua de terminale Qiwi &#351i Paynet</option>
+									<option value="On-line prin oplata.md, paynet.md, my.runpay.com">On-line prin oplata.md, paynet.md, my.runpay.com</option>
+									<option value="Prin intermediul b&#259ncilor">Prin intermediul b&#259ncilor</option>
+								</select>
+							</td>
+							<td>
+								<input type="number" name="Percent" id="Percent" value="14.0" max="100.0" min="14.0" step="0.1">
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="4">
+								<br><input type="submit" name="Calculate" id="Calculate" value="Calculeaz&#259">
+								<input type="reset" name="Clear" id="Clear" value="&#350terge">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	<div align="left">
+		<br><br>
+		<a href="https://maib.md" target="_blank"><img src="https://www.maib.md/files/2021/NEWS/logo_maib_corel2.png" alt="MAIB" width="10%"></a>
+	</div>
+</body>
+</html>

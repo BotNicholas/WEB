@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+    <link rel="icon" type="images/gif" href="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div id="container" title="Задачи html">
+        <form id="main" name="main">
+            <h1>Запись на курсы</h1>
+            <hr>
+
+            <label for="name">Имя:</label>
+            <input type="text" placeholder="Введите ваше имя..." required id="name" name="name">
+            <span id="bad_name" class="bad_text" hidden>Только буквы!</span>
+
+            <fieldset id="programming_languages">
+                <legend>Язык программирования:</legend>
+                <div>
+                    <input type="radio" name="pl" id="cpp" value="cpp"><label for="cpp">C++</label>
+                </div>
+                <div>
+                    <input type="radio" name="pl" id="php" value="php" checked><label for="php">PHP</label>
+                </div>
+                <div>
+                    <input type="radio" name="pl" id="python" value="python"><label for="python">Python</label>
+                </div>
+            </fieldset>
+
+            <label for="additiion">Дополнительная информация:</label>
+            <textarea name="additiion" name="addition" id="addition" placeholder="Введите здесь что-то дополнительное..."></textarea>
+
+            <label for="secretWord">Секретное слово:</label><input type="password" name="secretWord" id="secretWord" required placeholder="Введите секретное слово...">
+            
+            <div id="buttons">
+                <button type="submit" class="btn" id="send" name="send">Отпревить</button>
+                <button type="reset" class="btn" id="clear" name="clear">Очистить</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+#main{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* background-color: red; */
+	height: 140px;
+}
+
+div.content{
+	display: flex;
+	flex-direction: column;
+	/* background-color: yellow; */
+	width: 25%;
+	
+}
+
+.header{
+	/* background-color: blue; */
+	color: #0d0d0d;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:8pt;
+}
+
+#h1{
+	margin: 0px 0px 10px 0px;
+}
+
+img{
+	width: 10%;
+}
+
+div.advertisment{
+	display: flex;
+	/* background-color: pink; */
+	align-items: center;
+	padding-top: 10px;
+	height: 50%;
+
+}
+
+div.sale{
+	/* background-color: green; */
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 1px dashed red;
+	margin-left: 3%;
+	height: 70%;
+}
+
+span.text{
+	padding-left: 10px;
+	color: red;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+
+span.percent{
+	font-size: 45pt;
+	color: red;
+	font-weight: bold;
+}

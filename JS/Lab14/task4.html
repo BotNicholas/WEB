@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task IV</title>
+    <link rel="icon" type="images/gif" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzS7_IlGYyT7ZBY8qmvukk7ZfU5o2RjWqcQ&usqp=CAU">
+    <link rel="stylesheet" type="text/css" href="./CSS/style4.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Задание 4</h1>
+        <p>
+            <img src="./images/Рисунок2.png" alt="task sample" style="float: right; margin: 0px 10px 10px;">
+            Создайте html форму, показанную на рисунке. При нажатии на кнопку «Итого» вычислите общую сумму всех значений полей. 
+            Создайте файл *.js, содержащий функцию, вычисляющую итоговую сумму. Используя CSS стили, примените дизайн к странице.
+        </p>
+        <hr>
+
+        <form>
+            <h3>Оплата комкнальных услуг</h3>
+            <hr>
+            <div class="content">
+                <div id="image">
+                    <img src="https://images.satu.kz/82580541_82580541.jpg?PIMAGE_ID=82580541" alt="calculator" width="100%">
+                </div>
+                <div id="input">
+                    <div class="service">
+                        <label for="electricity">Электроэнергия</label>
+                        <input id="electricity" type="number" min="0" step="0.1" value="0">
+                    </div>
+                    <div class="service">
+                        <label for="warm">Отопление </label>
+                        <input id="warm" type="number" min="0" step="0.1" value="0">
+                    </div>
+                    <div class="service">
+                        <label for="gaz">Газ </label>
+                        <input id="gaz" type="number" min="0" step="0.1" value="0">
+                    </div>
+                    <div class="service">
+                        <label for="internet">Интернет </label>
+                        <input id="internet" type="number" min="0" step="0.1" value="0">
+                    </div>
+                    <div class="service">
+                        <label for="telephone">Телефон </label>
+                        <input id="telephone" type="number" min="0" step="0.1" value="0">
+                    </div>
+                </div>
+            </div>
+            <div id="buttons">
+                <button type="button" onclick="Calc()">Итого</button>
+                <button type="button" onclick="Close()">Закрыть</button>
+                <input type="reset" value="Очистить">
+            </div>
+        </form>
+        
+        <script src="./JS/task4.js"></script>
+
+    </div>
+</body>
+</html>

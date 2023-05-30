@@ -1,0 +1,67 @@
+body{
+    background-image: url(https://tierrasuratherzog.com/wp-content/uploads/2019/05/TS-Wedding-Paper-BG.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.imgCenter{
+    /* img - is an inline tag. Firsstly we have to meke it in block. We use disblay: block for this*/
+    display: block;
+    margin: auto;
+    /*lets make it in ellipse*/
+    border-radius: 100%;
+}
+
+
+
+/* #woman {
+    float: right;
+    margin-right: 15%;
+    width: 300px;
+} */
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    line-height: 15px;
+}
+
+hr {
+    width: 25%;
+    height: 0px;
+    color: black;
+}
+
+#text {
+    text-indent: 20px;
+    margin: auto;
+    width: 300px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#woman {
+    text-align: center;
+    float: right;
+    width: 300px;
+    margin: auto 15% auto auto;
+}
+
+img{
+    padding: 10px;
+}
+
+a.likeButton{
+    display: block;
+    width: 120px;
+    margin: 70px auto auto auto;
+    padding: 10px;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    background: #1cb47a;
+    border-radius: 10px;
+    
+}

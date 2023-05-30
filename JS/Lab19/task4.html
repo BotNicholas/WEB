@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Task IV</title>
+    <link rel="icon" type="images/gif" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzS7_IlGYyT7ZBY8qmvukk7ZfU5o2RjWqcQ&usqp=CAU">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div id="container">
+        <form id="main">
+            <h1>Задание 4</h1>
+            <p>
+                HTML-документ содержит таблицу пользователей с двумя колонками: имя и фамилия. Под таблицей сделайте форму, с 
+                помощью которой можно будет добавить нового пользователя в таблицу. Сделайте так, чтобы при клике на любую ячейку 
+                появлялся prompt, с помощью которого можно изменить текст ячейки. Задачу решите с помощью делегирования 
+                (то есть событие должно быть навешано на table)
+            </p>
+            <hr>
+        <div id="answer">
+            <table id="alias">
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Вася</td>
+                        <td>Пупкин</td>
+                    </tr>
+                    <tr>
+                        <td>Родион</td>
+                        <td>Раскольников</td>
+                    </tr>
+                    <tr>
+                        <td>Андрей</td>
+                        <td>Болконский</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form name="add_a_user" id="add_a_user">
+                <div>
+                    <label for="uname">Введите имя пользователя:</label>
+                    <input id="uname" type="text" placeholder="Имя...">
+                </div>
+
+                <div>
+                    <label for="usurname">Введите фамилию пользователя:</label>
+                    <input id="usurname" type="text" placeholder="Фамилия...">
+                </div>
+                
+
+                
+
+                <button type="button" id="adduserbtn" class="btn">Добавить</button>
+            </form>
+
+            <script src="./js/task4.js"></script>
+        </div>
+    </form>
+
+        
+    </div>
+</body>
+</html>

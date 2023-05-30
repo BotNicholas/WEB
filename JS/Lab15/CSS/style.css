@@ -1,0 +1,189 @@
+body{
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 97%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+p{
+    text-indent: 10px;
+}
+
+code{
+    font-style: italic;
+    font-weight: bold;
+}
+
+#result-area{
+    display: flex;
+    flex-direction: row;
+}
+
+#buttons-area{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.btn{
+    display: inline;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px black;
+    /* transition: all 1s; */
+}
+
+.btn:active{
+    box-shadow: none;
+    transform: translate(0px, 5px);
+    /* transition: all 1s; */
+}
+
+#answer-area{
+    visibility: hidden;
+    font-size: 15pt;
+    font-weight:bold;
+    color: brown;
+    width: 100%;
+    background-color: rgba(163, 161, 161, 0.493);
+    padding: 10px;
+    border-radius: 10px;
+    height: min-content;
+    width: max-content;
+    margin: 10px;
+}
+
+
+table, th, td{
+    border: 1px dashed black;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+td:not(#tel_table td){
+    text-align: center;
+}
+
+
+#result-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#result-area2{
+    flex-wrap: wrap;
+    width: 15%;
+}
+
+#result-area3{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#buttons-area2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+input[type="date"]{
+    border-radius: 10px;
+    height: max-content;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#text{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn_reverse{
+    display: inline;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px black;
+    transition: all 0.15s;
+}
+
+.btn_reverse:active{
+    transform: rotate(180deg);
+    box-shadow: none;
+    transition: all 0.15s;
+}
+
+#tel_table, #tel_table td{
+    border: 1px solid black;
+}
+
+#tel_table td{
+    justify-content: left;
+}
+
+#tel_table td:nth-child(1){
+    width: 27%;
+}
+
+#tel_table td:nth-child(2){
+    width: 43%;
+}
+
+#tel_table{
+    background: radial-gradient(#ffffff, #cecece);
+    width: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+#tel{
+    border-radius: 10px;
+    padding: 2px;
+    /* width: 90%; */
+    width: 35%;
+    font-size: 10pt;
+    transition: all 1s;
+}
+#tel:focus{
+    width: 90%;
+    transition: all 1s;
+}
+
+#tel:invalid:focus{
+    background: radial-gradient(#8b0b0b2c, #ff03032d);
+    color: rgb(75, 14, 14);
+    transition: all 1s;
+}
+
+#tel:invalid{
+    background: radial-gradient(#8b0b0b59, #ff030362);
+    color: rgb(255, 0, 0);
+    transition: all 1s;
+}

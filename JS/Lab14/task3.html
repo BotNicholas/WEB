@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task III</title>
+    <link rel="icon" type="images/gif" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzS7_IlGYyT7ZBY8qmvukk7ZfU5o2RjWqcQ&usqp=CAU">
+    <link rel="stylesheet" type="text/css" href="./CSS/style3.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Задание 3</h1>
+        <p>
+            <img src="./images/Рисунок1.jpg" alt="example">
+            Напишите функцию distanta которая вычисляет расстояние между двумя точками (x1, y1) и (x2, y2). Все значения должны быть вещественного типа. 
+            Вам понадобиться функция Math.sqrt для вычисления квадратного корня. Используйте эту функцию в скрипте, который позволяет пользователю ввести координаты 
+            точек в форму HTML и выводит результат в этой же форме.
+        </p>
+        <hr>
+
+        <form class="container">
+            <div id="input">
+                <div id="Apoint">
+                    <div class="x">
+                        <label for="x1">Enter x1 value </label>
+                        <input type="number" id="x1" step="1" value="0">
+                    </div>
+                    <div class="y">
+                        <label for="y1">Enter y1 value </label>
+                        <input type="number" id="y1" step="1" value="0"> 
+                    </div>
+                </div>
+                
+                <div id="Bpoint">
+                    <div class="x">
+                        <label for="x2">Enter x2 value </label>
+                        <input type="number" id="x2" step="1" value="0">
+                    </div>
+                    <div class="y">
+                        <label for="y2">Enter y2 value </label>
+                        <input type="number" id="y2" step="1" value="0">
+                    </div>
+                </div>                
+            </div>
+
+            <div id="output">
+                <label for="d">Distance: </label>
+                <input type="text" id="d" readonly value="0">
+            </div>
+
+            <div id="calculateButton">
+                <button type="button" id="calculate" onclick="Calc()">Calculate</button>
+            </div>
+            
+            <script src="./JS/task3.js"></script>
+
+        </form>
+    </div>
+</body>
+</html>

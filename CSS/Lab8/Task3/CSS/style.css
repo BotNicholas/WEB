@@ -1,0 +1,71 @@
+body{
+    /* sbackground: radial-gradient(#262626, #404040); */
+}
+
+img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom: 20px;
+}
+
+div.country, div.country-info, div.country-name{
+    background-color: #ffdd99;
+    border: 1px solid #4d4d4d;
+}
+
+div.country{
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+    box-shadow: 10px 10px 10px grey;
+}
+
+div.country-info{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    color: #003300;
+    font-size: 15pt;
+    margin-bottom: 5%;
+}
+
+div.country-name{
+    border-radius: 10px;
+    width: 80%;
+    margin: 5% auto 10% auto;
+    text-align: center;
+    color: #b30000;
+    font-size: 20pt;
+    padding: 5%;
+    box-shadow: 10px 10px 10px #474747;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+p{
+    padding-left: 5%;;
+}
+
+span.text{
+    color: #009900;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}

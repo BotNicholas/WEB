@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Sell your apartment</title>
+        <link rel="icon" type="images/gif" href="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif">
+        <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    </head>
+    <body>
+        <div id="main">
+            <form>
+                <div id="logo">
+                    <img src="https://www.pinclipart.com/picdir/big/164-1648500_holiday-apartments-in-nuwara-eliya-hill-heavens-resort.png" width="20%" alt="apartment">
+                    <h1>Sell an araptment:</h1>
+                </div>
+                
+                <fieldset class="location"> 
+                    <legend><h3>Location</h3></legend>
+                    <label for="region">Region:</label>
+                    <input type="text" required id="region" name="region" placeholder="Enter region here...">
+                
+                    <label for="adres">Adres:</label>
+                    <input type="text" required id="adres" name="adres" placeholder="Enter adres here...">
+                </fieldset>
+
+                <fieldset class="price">
+                    <legend><h3>Price:</h3></legend>
+                    <label for="price">Price:</label>
+                    <input type="number" min="0" id="price" name="price" placeholder="Enter price...">
+                </fieldset>
+
+                <fieldset class="specification">
+                    <legend><h3>Specification:</h3></legend>
+                    <label for="roomsCount">Rooms count:</label>
+                    <div id="count">
+                        <input type="range" required id="rooms" name="rooms" min="0" max="8" step="1" oninput="roomsCount.value = rooms.value" value="1">
+                        <input type="number" oninput="rooms.value = roomsCount.value" id="roomsCount" name="roomsCount" min="0" max="8" value="1">
+                    </div>
+                                
+                    <label for="totalArea">Apartment's area:</label>
+                    <input type="number" required id="totalArea" name="totalArea" min="44.0" step="0.1" placeholder="Total area...">
+
+                    <label for="livingArea">Living Area:</label>
+                    <input type="number" required id="livingArea" name="livingArea" min="33.0" step="0.1" placeholder="Living area...">
+
+                    <label for="floor">Floor: </label>
+                    <input type="number" required id="floor" name="floor" min="1" placeholder="Floor...">
+                    
+                    <label for="floorsNumber">Floors number:</label>
+                    <input type="number" required id="floorsNumber" name="floorsNumber" min="1" placeholder="Floors count...">
+
+                    <label for="layout">Layout:</label>
+                    <select id="layout" name="layout">
+                        <option value="communal">Communal</option>
+                        <option value="semi-dining_room">Semi-dining room</option>
+                        <option value="dining_room">Dining room</option>
+                        <option value="for_little_family">For little family</option>
+                        <option value="studio">Studio</option>
+                        <option value="one-roomed">One-roomed</option>
+                        <option value="two-roomed">Two-roomed</option>
+                        <option value="three-roomed">Three-roomed</option>
+                        <option value="free_layout">Free layout</option>
+                    </select>
+
+                    <label for="balconies">Balconies count:</label>
+                    <input type="number" required id="balconies" name="balconies" min="0" placeholder="Balconies...">
+
+                    <label for="bahtroomsConut">Bathrooms:</label>
+                    <input type="number" required id="bahtroomsConut" name="bahtroomsConut" min="1" placeholder="Bathrooms...">
+                
+                    <label for="apartmentType">Apartment type:</label>
+                    <select id="apartmentType" name="apartmentType">
+                        <option value="new_apartment">New apartment</option>
+                        <option value="used_apartment">Used apartment</option>
+                    </select>
+
+                
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>Additional:</h3></legend>
+                    <fieldset class="optional">
+                        <legend><h4>Telephone included:</h4></legend>
+                        <input type="checkbox" id="telephoneIncluded" name="telephoneIncluded">
+                        <label for="telephoneIncluded">telephone included</label>
+                    </fieldset>
+
+                    <fieldset class="optional">
+                        <legend><h4>Internet included:</h4></legend>
+                        <input type="checkbox" id="internetIncluded" name="internetIncluded">
+                        <label for="internetIncluded">internet</label>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>Descryption:</h3></legend>
+
+                    <label for="upploudImages">Uppload images:</label>
+                    <input type="file" multiple id="upploudImages" name="upploudImages" accept="image/*">
+
+                    <label for="descryption">Descryption:</label>
+                    <textarea id="descryption" name="descryption" style="resize: none; overflow-y: scroll;" placeholder="Enter the descryption here..."></textarea>
+                </fieldset>
+
+
+                <fieldset id="contacts">
+                    <legend><h3>Contacts:</h3></legend>
+                    <label for="contactTelephone" title="telephone format +373xxxxxxxx">Contact telephone:</label>
+                    <input type="tel" required id="contactTelephone" name="contactTelephone" pattern="[+]373[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" placeholder="+373xxxxxxxx">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" required id="email" name="email" placeholder="example@mail.com">
+                </fieldset>
+
+                <div id="buttons">
+                    <input type="submit" value="Publish">
+                    <input type="reset" value="Reset!">
+                </div>
+                
+             </form>
+        </div>
+    </body>
+</html>

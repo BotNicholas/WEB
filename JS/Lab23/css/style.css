@@ -1,0 +1,80 @@
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main{
+    margin-top: 50px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: rgb(221, 219, 219);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px grey;
+}
+
+input{
+    width: max-content;
+    border-radius: 10px;
+    padding: 2px 5px;
+    border: 0.5px solid grey
+}
+
+fieldset{
+    border: none;
+    padding: 0%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+}
+
+label{
+    margin-top: 10px;
+}
+
+#main h1{
+    margin: 0%;
+}
+
+#main hr{
+    width: 100%;
+}
+
+.btn{
+    width: max-content;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 2px 5px;
+    border: 0.5px solid black;
+    box-shadow: 3px 4px 0px black;
+}
+
+#buttons{
+    margin-top: 10px;
+}
+
+.btn:active{
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.bad{
+    border: 1px solid red;
+    transition: all 1s;
+}
+
+.bad_text{
+    font-size: 10pt;
+    color: red;
+    transition: all 1s;
+}

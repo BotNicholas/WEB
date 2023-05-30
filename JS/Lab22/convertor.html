@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convertor valutar</title>
+    <link rel="icon" type="images/gif" href="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif">
+    <link rel="stylesheet" type="text/css" href="./css/convertorstyle.css">
+</head>
+<body>
+    <div id="container">
+        <form name="convertor" id="convertor">
+            <div id="head">
+                <h1>CONVERTOR VALUTAR</h1>
+            </div>
+            <div id="main_area">
+                <div id="currency">
+                    <h2>Euro</h2>
+                </div>
+                <div id="input_area">
+                    <select name="currencies" id="currencies">
+                        <option value="eur">eur</option>
+                        <option value="mdl">leu</option>
+                        <option value="usd">usd</option>
+                    </select>
+                    <input id="amount" name="amount" type="number" min="0" value="0">
+                    <button type="button" class="btn" id="ok" name="ok">ok</button>
+                </div>                
+            </div>
+            <div class="converted">                
+                <span class="valuta"><img src="https://i.pinimg.com/originals/0a/59/b8/0a59b8838e5cd390409506e693b03cfb.png" alt="Moldova"> Leu moldavenesc</span>
+                <div>
+                    <span class="number">0</span> <span class="abbr">MDL</span>
+                </div>
+            </div>
+            <div class="converted">                
+                <span class="valuta"><img src="https://ak5.picdn.net/shutterstock/videos/15768715/thumb/10.jpg" alt="Euro"> Euro</span>
+                <div>
+                    <span class="number">0</span> <span class="abbr">EUR</span>
+                </div>
+            </div>
+            <div class="converted">
+                <span class="valuta"><img src="https://www.slidebackground.com/uploads/american-flag-ppt-background/american-flag-powerpoint-patriotic-images-4.jpg" alt="S.U.A."> Dolar S.U.A.</span>
+                <div>
+                    <span class="number">0</span> <span class="abbr">USD</span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/convertor.js"></script>
+</body>
+</html>

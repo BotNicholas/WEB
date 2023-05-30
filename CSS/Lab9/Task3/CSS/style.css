@@ -1,0 +1,200 @@
+body{
+    background-image: url(https://images.wallpaperscraft.ru/image/single/polet_shar_nebo_86980_1920x1080.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    font-size: 15pt;
+}
+
+#shortInfo{
+    /*height: 1900px;*/
+    /* position: sticky;
+    top: 0px; */
+    padding: 15px 15px 10% 15px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color: white;
+    background-color: #182042;
+
+    border-radius: 10px 50px 200px 10px;
+
+}
+#mainInfo{
+    width: 70%;
+}   
+
+#me{
+    margin: 15% 5% 10%;
+    display: block;
+    border-radius: 100%;
+    border: 10px dashed White;
+}
+
+#contacts{
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    word-break: break-all;
+}
+
+h1{
+    margin-bottom: 0%;
+    font-variant: small-caps;
+}
+
+
+#contacts a:link{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#contacts a:visited{
+    text-decoration: none;
+    color: #beffa5;
+}
+
+div.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+div.line img{
+    display: block;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+#shortInfo dt::before{
+    content: "• ";
+}
+
+#shortInfo dd::before{
+    content: "- ";
+}
+
+#shortInfo dt{
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+#shortInfo dd{
+    font-style: italic;
+}
+
+#navigation{
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    word-break: break-all;
+}
+
+#navigation a:hover{
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+#skills{
+    font-size: 17pt;
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    word-break: break-all;
+}
+
+#navigation a{
+    text-decoration: none;
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+
+#mainInfo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-style: italic;
+    padding-left: 2%;
+}
+
+
+#mainInfo h1{
+    font-weight: normal;
+    font-size: 50pt;
+    margin-left: 30%;
+}
+
+#mainInfo h2{
+    font-size: 25pt;
+    font-variant: small-caps;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+#mainInfo h3{
+    font-variant: small-caps;
+    margin-bottom: 1%;
+    text-indent: 10px;
+}
+
+#mainInfo p{
+    text-indent: 50px;
+}
+
+#mainInfo dt{
+    float: left;
+    font-weight: bold;
+}
+#mainInfo dd{
+    margin-left: 8%;
+}
+#mainInfo dt::after{
+    content: ":";
+}
+
+#up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 2%;
+}
+
+#up:hover{
+    width: 2.5%;
+    transition: 0.3s;
+}
+
+span.paragraph{
+    font-weight: bold;
+}
+
+#langualges{
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+#linkslist{
+    list-style-type: none;
+
+}
+#linkslist li::before{
+    content: "►";
+}
+#linkslist a:hover{
+    font-size: 1.1em;
+    color: rgb(105, 5, 5);
+    transition: 0.3s;
+}
+a{
+    color: rgb(26, 41, 68);
+    text-decoration: none;
+}

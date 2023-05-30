@@ -1,0 +1,61 @@
+body{
+    background-image: url("https://media.istockphoto.com/id/1362422378/photo/abstract-blurred-purple-background-light-spot-on-dark-background.jpg?b=1&s=170667a&w=0&k=20&c=amYN1DW4JOaYvCIpmjXigJVNVYQzEpDX0HiTBFW6IF8=");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+#main{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 96%;
+}
+
+
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.btn{
+    font-variant: small-caps;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 0px black;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.btn:active{
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+p.header{
+    text-align: center;
+}
+
+ol{
+    background-color: #47474749;
+    width: max-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+#numbers li{
+    padding-right: 20px;
+}
+
+p{
+    text-indent: 50px;
+}

@@ -1,0 +1,66 @@
+body{
+    /* background-color: rgb(80, 150, 145); */
+    background-color: rgb(48, 48, 48);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#registration{
+    background-color: rgb(80, 150, 145);
+}
+
+div .error{
+    color: red;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+#registration{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: max-content;
+    padding: 1% 2%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+div:not(#container){
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+fieldset{
+    border: none;
+}
+
+input, select, textarea{
+    margin: 10px;
+}
+
+h1, input[type="radio"]+label, input[type="checkbox"]+label{
+    margin: 0%;
+    color: white;
+    margin-right: 10px;
+}
+
+input, select, textarea{
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+label{
+    font-weight: bold;
+}
+
+/* input:invalid{
+    
+    color: red;
+} */

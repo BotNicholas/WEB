@@ -1,0 +1,33 @@
+body{
+    font-size: 15pt;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(https://i.pinimg.com/originals/2f/05/da/2f05da0727aa5c05279e29f9b6cb8f67.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+p::first-letter{
+    color:red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.content img{
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-variant: small-caps;
+    text-shadow: 5px 5px 5px rgba(66, 66, 66, 0.5);
+}

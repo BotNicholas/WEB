@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Task I</title>
+    <link rel="icon" type="images/gif" href="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+    <div id="source">
+        <form id="main">
+            <h1>Задание 1</h1>
+            <p>
+                Пользователь вводит через пробел числа. Определите, сколько в нем встречается различных чисел.
+            </p>
+            <hr width="80%">
+            <div id="input-area">
+                <input id="numbers" type="text" pattern="\d+(\s?\d?)*" required title="numbers only!!" autocomplete="off" value="0">
+                <button type="button" class="btn" onclick="findNumbers()">execute...</button>
+            </div>
+            <div id="answer">
+                
+            </div>
+        </form>
+
+        <script src="./JS/task1.js"></script>
+    </div>
+</body>
+</html>

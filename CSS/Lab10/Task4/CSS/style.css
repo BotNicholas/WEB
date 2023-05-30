@@ -1,0 +1,43 @@
+body{
+    background: radial-gradient(#cccccc, #999999);
+    background-attachment: fixed;
+}
+
+#main{
+    margin: 50px auto auto;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+a{
+    text-decoration: none;
+    color: azure;
+    background-color: #292828;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 3px;
+}
+
+a:hover{
+    padding: 12px;
+    text-shadow: 0px 0px 8px azure;
+    
+}
+
+.navigation{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section:nth-child(4) a{
+    text-decoration: none;
+    color: azure;
+    background-color: #ff6600;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

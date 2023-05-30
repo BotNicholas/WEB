@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task IV</title>
+    <link rel="icon" type="images/gif" href="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+    <div id="main">
+        <form>
+            <h1>Задание 4</h1>
+            <p>
+                Создайте web-страницу, содержащую 4 кнопки HTML. При нажатии на каждой кнопке появится окно <b>alert</b>, 
+                отображающее дату и время относительно текущей даты и времени. 
+                <u>Первая кнопка</u> <i>Сейчас</i> - текущие дата и время, 
+                <u>вторая кнопка</u> <i>Вчера</i> - дата и время 24 часа назад, 
+                <u>третья кнопка</u> -  дата и время 10 лет назад, 
+                <u>четвертая кнопка</u> - дата и время через неделю. 
+            </p>
+
+            <hr style="width: 90%;">
+
+            <div id="result-area2">
+                <div id="buttons-area2">
+                    <button type="button" class="btn" onclick="now()">Now</button>
+                    <button type="button" class="btn" onclick="yesterday()">Yesterday</button>
+                    <button type="button" class="btn" onclick="tenYearsAgo()">10 years ago</button>
+                    <button type="button" class="btn" onclick="afterAWeek()">After a week</button>
+    
+                </div>
+    
+                <div id="answer-area">
+                    
+                </div>
+            </div>
+            
+            
+            <script src="./JS/task4.js"></script>
+
+        </form>
+    </div>
+</body>
+</html>

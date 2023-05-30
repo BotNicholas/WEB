@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task I</title>
+        <link rel="icon" type="images/gif" href="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif">
+        <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <form id="main">
+                <div class="question_fields">
+                    <h1>Задание 1</h1>
+                    <p class="header">
+                        HTML документ содержит таблицу и кнопку, при нажатии на которой должны закраситься в красный 
+                        цвет все ячейки, содержащие значение 0.
+                    </p>
+                    <hr width="90%"><br>
+
+                <div class="answer_field">
+                    <table id="numbers_table">
+                        <tr>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <button type="button" class="btn" onclick="findZeros()">Find Zeros!</button>
+                </div>
+            </form>
+
+            <script src="./JS/task1.js"></script>
+        </div>
+    </body>
+</html>

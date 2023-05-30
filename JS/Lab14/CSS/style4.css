@@ -1,0 +1,123 @@
+body{
+    background-image: url("https://wallpaper.dog/large/10766.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    width: 97%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+h1{
+    font-variant: small-caps;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+p{
+    text-indent: 20px;
+    font-size: 15pt;
+    font-variant: small-caps;
+}
+
+hr{
+    width: 80%;
+}
+
+h3{
+    font-weight: bold;
+    font-variant: small-caps;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+}
+
+form{
+    padding: 20px;
+    width: 20%;
+    border-radius: 10px;
+    background-color: #ffffff6c;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90%;
+}
+
+#image{
+    width: 25%;
+    margin-left: 10px;
+}
+
+input[type="number"]{
+    background-color: #d8d5d5;
+    border-radius: 10px;
+    outline: none;
+    padding: 3px;
+    width: 40px;
+    transition: all 1s;
+}
+
+input[type="number"]:focus{
+    width: 100px;
+    transition: all 1s;
+    background-color: white;
+}
+
+input[type="number"]:invalid{
+    border: 2px solid rgb(177, 10, 10);
+    background-color: #8a1414c7;
+    color: white;
+}
+
+input[type="number"]:invalid:focus{
+    width: 100px;
+    transition: all 1s;
+    background-color: rgb(201, 30, 30);
+}
+
+label{
+    /* font-variant: small-caps; */
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+button, input[type="reset"], input[type="sublit"]{  
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px black;
+    margin: 10px;
+    margin-left: 1%;
+    margin-top: 15px;
+}
+
+button:active, input[type="reset"]:active, input[type="sublit"]:active{
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

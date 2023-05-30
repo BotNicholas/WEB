@@ -1,0 +1,68 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/ff/82/08/ff8208192e36b712cf3386f00797566d.jpg);
+    background-size: 10%;
+}   
+
+#main{
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfbfa;
+    border-radius: 10px;
+    width: 15%;
+    margin: auto;
+    box-shadow: 10px 10px 5px #a3a2a2;
+    font-size: 17pt;
+    padding: 10px 20px 0px;
+    /* word-break: break-all; */
+}
+
+#tvlogo{
+    width: 15%;
+}
+
+div.item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    flex-wrap: wrap;
+}
+
+div.PName{
+    color: #4593d3;
+}
+
+div.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /**/
+    align-items: center;
+    color: #a3a2a2;
+}
+
+span{
+    margin-right: 3%;
+}
+
+span.time{
+    color: black;
+}
+
+div.showTime{
+    position: relative;
+}
+
+hr.watched{
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 0%;
+    height: 3.4px;
+    border: 0 solid transparent;
+    background-color: #4e4e4e;
+}
+
+hr.left{
+    margin-top: 0%;
+    border: 0px none transparent;
+    border-top: 3.4px dotted grey;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task III</title>
+   <link rel="icon" type="images/gif" href="https://media.tenor.com/Mos3BAm5aTcAAAAM/checklist-task.gif">
+</head>
+<body>
+	<h1>Условный оператор if else</h1>
+   
+   <p>
+   В некоторых источниках говорится, что оператор выбора <span style="background-color: #ffe6e6;"><font color="red">if else</font></span> — самостоятельный оператор. Но это не так, <span style="background-color: #ffe6e6;"><font color="red">if else</font></span> — это всего лишь форма записи оператора выбора <span style="background-color: #ffe6e6;"><font color="red">if</font></span>. Оператор <span style="background-color: #ffe6e6;"><font color="red">if else</font></span> позволяет определить программисту действие, когда условие истинно и альтернативное действие, когда условие ложно. Тогда как <span style="background-color: #ffe6e6;"><font color="red">if</font></span> позволял определить действие при истинном условии.
+   </p>
+   <!-- Для придания выделения светло розовым цветом я использовал style CSS-->
+   <p>
+      Синтаксис записи оператора выбора <span style="background-color: #ffe6e6;"><font color="red">if else</font></span>:
+      <code>
+      <pre><font color="#009973"><!--глобально, для цвета текста-->   <font color="#4d88ff">if</font> (<font color="#006600">/*проверяемое условие*/</font>)
+   {
+      <font color="#006600">/*тело оператора выбора 1*/</font>;
+   } <font color="#4d88ff">else</font>
+         {
+            <font color="#006600"></font>/*тело оператора выбора 2*/;
+         }</font></pre>
+      </code>
+   </p>
+ 
+   <p>
+      Читается так: «Если проверяемое условие истинно, то выполняется <b>тело оператора выбора 1</b>, иначе (то есть проверяемое условие ложно) выполняется <b>тело оператора выбора 2</b>» Обратите внимание на то, как записан оператор <span style="background-color: #ffe6e6;"><font color="red">if else</font></span>. Слово <span style="background-color: #ffe6e6;"><font color="red">else</font></span> специально сдвинуто вправо для того чтобы программный код был понятен и его было удобно читать.
+   </p>
+
+   <!-- < - &lt (less than)
+        > - &gt (grether than)-->
+   <p>Рассмотрим задачу: <em>«Даны два числа, необходимо их сравнить»</em>.
+   <code>
+   <pre>   1.	#include &ltiostream&gt
+   2.	using namespace std;
+   3.	
+   4.	int main()
+   5.	{
+   6.	   int a, b;
+   7.	   cout &lt&lt "Vvedite pervoe chislo: ";
+   8.	   cin &gt&gt a;
+   9.	   cout &lt&lt "Vvedite vtoroe chislo: ";
+   10.	   cin &gt&gt b;
+   11.	   if ( a &gt= b) // если a больше либо равно b, то
+   12.	     {
+   13.	       cout &lt&lt a &lt&lt " >= " &lt&lt b &lt&lt endl;
+   14.	     } else  // иначе
+   15.	           {
+   16.	             cout &lt&lt a &lt&lt " &lt= " &lt&lt b &lt&lt endl;
+   17.	           }
+   18.	   system("pause");
+   19.	   return <b>0</b>;
+   20.	}</pre>
+   </code>
+   </p>
+
+<p>
+В данном коде нас интересуют <b>строки 11-17</b>. Эти строки читаются так: если <span style="background-color: #ffe6e6;"><font color="red">a</font></span> (первое число) больше либо равно <span style="background-color: #ffe6e6;"><font color="red">b</font></span> (второе число), то выполнить оператор вывода в <b>строке 13</b>
+
+<center>
+   cout <font color="#009973">&lt&lt</font> a <font color="#009973">&lt&lt</font> <font color="#b300b3">" &gt= "</font> <font color="#009973">&lt&lt</font> b <font color="#009973">&lt&lt</font> endl<font color="#009973">;</font>        <!--&lt&lt == <<     and      &gt&gt == >>--> 
+</center>
+
+иначе выполнить оператор вывода в <b>строке 16</b>
+
+<center>
+   cout <font color="#009973">&lt&lt</font> a <font color="#009973">&lt&lt</font> <font color="#b300b3">" &lt= "</font> <font color="#009973">&lt&lt</font> b <font color="#009973">&lt&lt</font> endl<font color="#009973">;</font>
+</center>
+
+</p>
+<p>
+В данном условном операторе мы используем операции соотношений <span style="background-color: #ffe6e6;"><font color="red">&gt=</font></span> и <span style="background-color: #ffe6e6;"><font color="red">&lt=</font></span>. Условие перехода не совсем правильно, так как условие будет ложно только в том случае, если первое число будет меньше второго, во всех остальных случаях условие истинно. Значит, <b>строку 16</b> нужно записать так:<br>
+<center>
+   cout <font color="#009973">&lt&lt</font> a <font color="#009973">&lt&lt</font> <font color="#b300b3">" &lt "</font> <font color="#009973">&lt&lt</font> b <font color="#009973">&lt&lt</font> endl<font color="#009973">;</font>       <font color="#006600"> // в кавычках записать не меньше или равно, а просто меньше.</font>
+</center>
+</p>
+
+<p>
+А вот так сработала программа:
+<pre>   Vvedite pervoe chislo: 15
+   Vvedite vtoroe chislo: -4
+   15 >= -4
+</pre>
+</p>
+      
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_960_720.jpg");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 100%;
+
+    
+    line-height: 30px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px 10px;
+    width: 95%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+    font-size: 15pt;
+    font-style: italic;
+
+    word-break: break-all;
+    flex-wrap: wrap;
+}
+
+.task h1{
+    font-variant: small-caps;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+span.alert{
+    color: red;
+    font-weight: bold;
+}

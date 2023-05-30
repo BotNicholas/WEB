@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Task V</title>
+    <link rel="icon" type="images/gif" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzS7_IlGYyT7ZBY8qmvukk7ZfU5o2RjWqcQ&usqp=CAU">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div id="container">
+        <form id="main">
+            <h1>Задание 5</h1>
+            <p>
+                Имеются два поля ввода целых чисел n и m. Напишите скрип, который позволяет нарисовать таблицу размером n и m и заполнить её случайными целыми числами.
+            </p>
+            <hr>
+            <div id="answer">
+                
+                <div>
+                    <label for="n">Введите число строк: </label>
+                    <input type="number" id="n" step="1" min="0" placeholder="Стрики..." value="0">
+                </div>
+                
+                <div>
+                    <label for="m">Введите число столбцов: </label>
+                    <input type="number" id="m" step="1" min="0" placeholder="Столбцы..." value="0">
+                </div>
+
+                <!-- <button type="button" id="createbtn">Создать таблицу</button> -->
+
+                <div id="newTable"></div>
+
+                <script src="./js/task5.js"></script>
+            </div>
+        </form>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task III</title>
+	<link rel="icon" type="images/gif" href="https://bestanimations.com/media/shapes/13687291393d-shape-computer-art-gif-2.gif">
+</head>
+<body bgcolor="#15151e">
+	<form>
+		<table border="0" cellspacing="0" bgcolor="#ffd633" width="300px" cellpadding="10px">
+			<tr>
+				<td colspan="2">
+					<font size="6.5">Найти</font>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="PlaceToGo">Место/название объекта:</label><br>
+					<input type="text" placeholder="Место/название объекта" name="PlaceToGo" id="PlaceToGo">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="ArrivingDate">Дата заезда</label><br>
+					<input type="date" placeholder="Дата заезда" name="ArrivingDate" id="ArrivingDate">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label for="LeavingDate">Дата отъезда</label><br>
+					<input type="datetime-local" placeholder="Дата отъезда" name="LeavingDate" id="LeavingDate">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<select name="Adults" id="Adults">
+						<option value="1 adult">1 взрослый</option>
+						<option value="2 adults">2 взрослых</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select name="Children" id="Children">
+						<option value="1 child">1 ребенок</option>
+						<option value="2 children">2 ребенка</option>
+					</select>
+				</td>
+				<td>
+					<select name="Rooms" id="Rooms">
+						<option value="1 room">1 комната</option>
+						<option value="2 rooms">2 комнаты</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+
+				<td>
+					<select name="ChildAge" id="ChildAge">
+						<option value="11 years">12 лет</option>
+						<option value="<12 years"><12 лет</option>
+						<option value=">12 and <18 years">>12 и <18  лет</option>
+					</select>
+				</td>
+
+				<td>
+					<select name="ChildAge" id="2ChildAge">
+						<option value="11 years">12 лет</option>
+						<option value="<12 years">&lt12 лет</option>
+						<option value=">12 and <18 years">&gt12 и &lt18  лет</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<input type="checkbox" name="Trip" id="TripByWork">
+					<label for="TripByWork">Я путешествую по работе</label>
+					<img src="https://cdn-icons-png.flaticon.com/512/7077/7077986.png" alt="question" width="5%" title="Вас отправили в поездку по работе, или нет?">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="reset" name="Clear" id="Clear" value="Очистить">
+				</td>
+				<td align="right">
+					<input type="submit" name="Accept" id="Accept" value="Найти">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

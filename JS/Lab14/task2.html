@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task II</title>
+    <link rel="icon" type="images/gif" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzS7_IlGYyT7ZBY8qmvukk7ZfU5o2RjWqcQ&usqp=CAU">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Задание 2</h1>
+        <p>
+            Создайте html форму, содержащую 3 поля ввода для ввода 3 сторон треугольника, кнопку «Вычислить» и поля ввода для вывода результатов. 
+            Создайте файл *.js, содержащий функции, вычисляющие периметр, площадь и вид треугольника по его сторонам. Используя CSS стили, примените дизайн к странице.
+        </p>
+        <hr>
+
+        <form>
+            <div id="data">
+                <div id="input">
+                    <div id="a_side">
+                        <label for="a">a: </label>
+                        <input id="a" type="number" step="0.1" min="0" value="0">
+                    </div>
+                    
+        
+                    <div id="b_side">
+                        <label for="b">b: </label>
+                        <input id="b" type="number" step="0.1" min="0" value="0">
+                    </div>
+                    
+        
+                    <div id="c_side">
+                        <label for="c">c: </label>
+                        <input id="c" type="number" step="0.1" min="0" value="0">
+                    </div>
+                </div>
+
+                <div id="output">
+                    <div id="perimetrValue">
+                        <label for="perimetr">Perimetr: </label>
+                        <input id="perimetr" type="text" readonly>
+                    </div>
+                    
+        
+                    <div id="areaValue">
+                        <label for="area">Area: </label>
+                        <input id="area" type="text" readonly>
+                    </div>
+                    
+        
+                    <div id="triangleType">
+                        <label for="triangle_type">Triangle type: </label>
+                        <input id="triangle_type" type="text" readonly>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div id="calculateButton">
+                <button type="button" id="calculate" onclick="calculateFunction()">Calculate!</button>
+            </div>
+            
+        </form>
+
+        
+        <script src="./JS/task2.js"></script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Task II</title>
+    <link rel="icon" type="images/gif" href="https://www.kizoa.com/img/e8nZC.gif">
+</head>
+<body>
+	<h1>Nasted tables</h1>
+
+<table border="1">
+	<thead bgcolor="#00cc44">
+		<tr>
+			<th>Header column 1</th>
+			<th>Header column 2</th>
+			<th>Header column 3</th>
+			<th>Header column 4</th>
+		</tr>
+	</thead>
+
+	<tbody bgcolor="#d6f5d6">
+		<tr>
+			<td>Row 2 - Item 1</td>
+			<td>Row 2 - Item 2</td>
+			<td rowspan="2">
+				<b>Row 2: Nasted Table 1</b> <br><br>
+				
+				<table border="1" bgcolor="#ffffcc">
+					<tr>
+						<th bgcolor="#ffff33">Row 1 Header</th>
+						<td>item</td>
+					</tr>
+					<tr>
+						<th bgcolor="#ffff33">Row 2 Header</th>
+						<td>item</td>
+					</tr>
+					<tr>
+						<th bgcolor="#ffff33">Row 3 Header</th>
+						<td>item</td>
+					</tr>
+				</table>
+				<br>
+			</td>
+			<td>Row 2 - item 4<br>A second line</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Row 3: Nasted Table 2</b><br>
+				<br>
+
+				<table bgcolor="#ffffcc" border="1">
+					<tr>
+						<th bgcolor="#ffff33">Row 1 Header</th>
+						<td>item</td>
+					</tr>
+					<tr>
+						<th bgcolor="#ffff33">Row 2 Header</th>
+						<td>item</td>
+					</tr>
+				</table>
+			</td>
+			<td>Row 3 - Item 2</td>
+			<td rowspan="2">Row 3 - Item 3</td>
+		</tr>
+		<tr>
+			<td>Row 4 - Item 1</td>
+			<td>Row 4 - Item 2</td>
+			<td>Row 4 - Item 3</td>
+		</tr>
+		<tr>
+			<td colspan="4">Row 5 - Last row outer table</td>
+		</tr>
+	</tbody>
+</table>
+
+<br>
+<h3>Table legend:</h3>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tr align="center" valign="center">
+		<td width="20" heigth="20" bgcolor="#00cc44"></td>
+		<td> main table's header</td>
+	</tr>
+
+	<tr align="center" valign="center">
+		<td width="20" heigth="15"  bgcolor="#d6f5d6"></td>
+		<td> main table's body</td>
+	</tr>
+
+	<tr align="center" valign="center">
+		<td width="20" heigth="20"  bgcolor="#ffff33"></td>
+		<td> 1'st nasting level table's header</td>
+	</tr>
+	<tr align="center" valign="center">
+		<td width="20" heigth="20"  bgcolor="#ffffcc"></td>
+		<td> 1'st nasting level table's body</td>
+	</tr>
+</table>
+
+</body>
+</html>

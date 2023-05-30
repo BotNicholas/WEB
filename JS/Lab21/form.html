@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <link rel="icon" type="images.gif" href="https://media.giphy.com/media/yr7n0u3qzO9nG/giphy.gif">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div id="container">
+        <form id="registration" name="registration">
+            <!-- onsubmit="alert('submit!');return false" -->
+
+            <h1>Регистрация</h1>
+
+            <div>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите имя..." required>
+            </div>
+            <div id="nameError" class="error" hidden></div>
+            
+            <div>
+                <label for="email">Электронный адрес</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>                
+            </div>
+            <div id="emailError" class="error" hidden></div>
+            
+            <div>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль..." required>
+            </div>
+            <div id="passwordError" class="error" hidden></div>    
+            
+            <div>
+                <label for="confirmP">Подтвердите пароль</label>
+                <input type="password" id="confirmP" name="confirmP" placeholder="Подтверждение..." required>
+            </div>
+            <div id="confirmPError" class="error" hidden></div>    
+            
+
+            <fieldset required id="hobby" name="hobby">
+                <label>Хобби</label>
+                <input type="checkbox" name="swimming" id="swimming">
+                <label for="swimming">Плаванье</label>
+                <input type="checkbox" name="reading" id="reading">
+                <label for="reading">Чтение</label>
+                <input type="checkbox" name="nothing" id="nothing">
+                <label for="nothing">Ничего неделанье   </label>
+            </fieldset>            
+            <div id="hobbyError" class="error" hidden></div>
+            
+            <div>
+                <label for="birthday">Дата рождения</label>
+                <!-- <input type="date" id="birthday" name="birthday"> -->
+                <input type="text" name="birthday" id="birthday" placeholder="dd/mm/yyyy" pattern="\d\d/\d\d/\d\d\d\d" required>
+            </div>
+            <div id="birthdayError" class="error" hidden></div>
+            
+            <div>
+                <label for="country">Страна рождения</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected hidden>"--Выберите одну--"</option>
+                    <option value="moldova">Молдова</option>
+                    <option value="romaia">Румыния</option>
+                    <option value="russia">Россия</option>
+                    <option value="usa">США</option>
+                    <option value="germany">Германия</option>
+                </select> 
+            </div>
+            <div id="countryError" class="error" hidden></div>   
+            
+            
+            <div style="display: flex; align-items: center;">
+                <label for="comments">Комментарии</label>
+                <textarea id="comments" name="comments"></textarea>    
+            </div>
+            
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <label>Вы хотите получать нашу рассылку?</label>
+                <fieldset id="rassilka" name="rassilka">
+                    <input type="radio" name="yes" id="yes">
+                    <label for="yes">Да</label>
+                    <input type="radio" name="yes" id="sure">
+                    <label for="sure">Конечно</label>
+                    <input type="radio" name="yes" id="great">
+                    <label for="great">С удовольствием</label>
+                </fieldset>
+            </div>
+            <div id="rassilkaError" class="error" hidden></div>
+            
+
+            <input name="send" type="submit" value="Отправить">
+            
+        </form>
+
+        <script src="./js/form.js"></script>
+    </div>
+</body>
+</html>
